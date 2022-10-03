@@ -1,0 +1,148 @@
+/* tag principali */
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#c2c2c2;
+}
+
+h1{
+	background-color:Tomato;
+    font-size:24px;
+	font-weight:700;
+    color:blue;
+}
+
+h2{
+	background-color:DodgerBlue;
+    font-size:24px;
+	font-weight:700;
+    color:blue;
+}
+
+li{
+    display:inline-block;
+    list-style: none;   /* questo comando è superfluo in quanto il simbolo dell'elenco non viene visualizzato comunque
+                         * dato che inline-block forza i 3 link a rimanere su un'unica linea orizzaontale e pertanto
+                         * i simboli-elenco vengono rimossi */
+}
+
+li a{
+    text-decoration: none;    
+}
+
+li a:hover{
+    color: white;
+}
+
+header{
+	background-color:#ffffe6;
+	color:red;
+	padding:20px;
+}
+
+nav{
+    background-color: grey;
+	height: 40px;
+    font-size:20px;
+    font-weight:600;
+    color: #004080;
+    line-height: 40px; /* stessa altezza dell'elemento, mi consente di centrare il testo sulla verticale */
+}
+
+main{
+	background-color: yellow;
+    padding:10px;
+}
+
+footer{
+    background-color: grey;
+    color: #004080;
+    height: 60px;
+    line-height: 60px; /* stessa altezza dell'elemento, mi consente di centrare il testo sulla verticale */
+    font-size: 14px;
+    font-weight: 600;
+    text-align:center;
+}
+
+/*elementi del corpo pagina*/
+#sx{
+    background-color:red;
+    color:#004080;
+    height:200px;
+    width:200px;
+    display:inline-block;
+    border:3px solid #004080;
+    border-radius:30px;
+    padding:10px;
+}
+
+.stile_center{
+    background-color:white;
+    color:#004080;
+    height:200px;
+    width:200px;
+    display:inline-block;
+    border:3px solid #004080;
+    border-radius:30px;
+    padding:10px;
+}
+
+#dx{
+    background-color: green;
+    color:#004080;
+    height:200px;
+    width:200px;
+    display: inline-block;
+    float: none;
+    border:3px solid #004080;
+    border-radius:30px;
+    padding:10px;
+}
+
+
+/* screen max=1023px */
+@media (min-width:761px) and (max-width:1023px) {
+    body{
+        background-color:red;
+    }
+    
+    #sx{
+        height:150px;
+        width:150px;
+    }
+    
+    .stile_center{
+        height:150px;
+        width:150px;
+    }
+    
+     #dx{
+        height:150px;
+        width:150px;
+    }
+    
+}
+
+/* screen max=760px */
+@media (max-width:760px) {
+    body{
+        background-color:green;
+    }
+    
+    #sx{
+        height:100px;
+        width:100px;
+    }
+    
+    .stile_center{
+        height:100px;
+        width:100px;
+    }
+    
+     #dx{
+        height:100px;
+        width:100px;
+    }
+}
